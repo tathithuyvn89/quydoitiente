@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quy đổi tiền tệ từ USD sang VND</title>
+
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th> Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td ><input type="text" id="amount" /></td>
+            <td>
+                <select id="Fromcurrency">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select id="Tocurrency">
+                    <option value="USD">USD</option>
+                    <option value="VND">VND</option>
+                </select>
+            </td>
+            <td><button type="button" onclick="convert()" style="background-color: blue; width: 100px" >Convert</button></td>
+        </tr>
+        <tr>
+            <td>
+                <p id="result"> Result: </p></td>
+            </td>
+        </tr>
+
+    </table>
+
+</form>
+<script src="quydoitiente.js"></script>
+</body>
+</html>
